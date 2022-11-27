@@ -134,13 +134,19 @@ color: #000000;
 
 .hero {
 background-color: var(--foncolor);
-
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/hero_bg.jpg);
+width: 1600px;
+margin: auto;
 }
 
 .hero-center{
   padding-top: 200px;
   padding-bottom: 200px;
   padding-left: 15px;
+  width: 1600px;
 }
 
 .title{
@@ -173,15 +179,39 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-/* padding-bottom: 94px; */
-/* padding-top: 94px; */
 }
 
 .feature .container{
-  /* margin-bottom: 94px; */
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.feature-list-item::before{
+  display: block;
+  content: '';
+  background-repeat: no-repeat;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-position: center;
+  margin-bottom: 30px;
+  background-size: 65.32px 70px;
+}
+.icon-antenna::before{
+ background-image: url(../img/SVG/antenna.svg); 
+}
+
+.icon-clock::before{
+  background-image: url(../img/SVG/clock.svg) ;
+}
+
+.icon-diagram::before{
+  background-image: url(../img/SVG/diagram.svg);
+}
+
+.icon-astronaut::before{
+  background-image: url(../img/SVG/astronaut.svg);
+}
+
 
 .feature-list li+li{
   margin-left: 30px;
@@ -237,14 +267,41 @@ text-align: center;
 letter-spacing: 0.03em;
 padding-bottom: 94px;
 padding-top: 94px;
+
 }
 
-.member-team-list li+li{
+/* .member-team-list li+li{
   margin-left: 30px;
+} */
+
+.team-soc-list{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.team .container{
-   
+.team-soc-items{
+  width: 44px;
+  height: 44px;
+  margin-bottom: 30px;
+}
+
+.team-soc-items:not(:last-child)
+{
+  margin-right: 10px;
+}
+
+.team-soc-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.team-soc-link:hover .team-soc-icons{
+  fill: #2196F3;
 }
 
 .member-team-list{
@@ -271,6 +328,7 @@ margin-bottom: 10px;
 width: 270px;
 background: #FFFFFF;
 background-color: transparent;
+margin-right: 30px;
 /* material shadow  */
 
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px
@@ -286,8 +344,64 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--second-link-color);
 padding-bottom: 30px;
+margin-bottom: 16px;
 }
 
+.customers{
+padding-top: 94px;
+padding-bottom: 94px;
+}
+.custoumer-list{
+  margin-top: 50px;
+  display: flex;
+}
+
+.custoumer-list li+li{
+  margin-left: 30px;
+}
+
+.customer-list-item{
+ display: flex;
+ width: 170px;
+ height: 92px;
+ border: 1px solid #AFB1B8;
+ border-radius: 4px;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.icon-yaandco{
+ background-size: 41px 46.7px;
+ background-image: url(../img/SVG/yaandco.svg);
+ }
+
+ .tagline-here{
+ background-size: 38.47px 34.05px;
+ background-image: url(../img/SVG/taglinehere.svg);
+ }
+
+ .company{
+ background-size: 43.46px 41.18px;
+ background-image: url(../img/SVG/company.svg);
+ }
+
+ .foster-peters{
+ background-size: 84.44px 40.62px;
+ background-image: url(../img/SVG/fosterpeters.svg);
+ }
+ .brand{
+ background-size: 62.54px 45.43px;
+ background-image: url(../img/SVG/brand.svg);
+ }
+
+ .tag-line{
+ background-size: 93.79px 43.93px;
+ background-image: url(../img/SVG/tag-line.svg);
+ }
+ .customer-list-item:hover,
+ .customer-list-item:focus{
+  color: #2196F3;
+ }
 
 /* --------------------------- PORTFOLIO------------------------- */
 
