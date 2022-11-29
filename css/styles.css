@@ -52,6 +52,7 @@ margin: 0 auto;
   color: #212121;
   letter-spacing: 0.06em;
   padding: 10px 24px;
+  border: transparent;
 }
 
 .btn:hover,
@@ -241,9 +242,14 @@ max-width: 300px;
 
 /*------DEVELOPMENT------ */
 
-.work li+li{
-  margin-left: 30px;
+.work-list-item{
+  width: calc((100%-90px)/3);
+  margin-right: 45px;
 }
+.work-list-item:nth-child(3n){
+  margin-right: 0px;
+}
+
 
 .heading{
   font-weight: 700;
@@ -406,15 +412,15 @@ padding-bottom: 94px;
 
 /* --------------------------- HERO------------------------- */
 
-.header-portfolio{
+.header{
   border: 1px solid #ECECEC;
+  bor
 }
 .button-work-list{
   display: flex; 
-  padding-top: 100px;
+  padding-top:100px;
   padding-bottom: 56px;
   justify-content: center;
-  border: transparent;
 }
 
 .button-work-list li+li{
@@ -431,6 +437,7 @@ letter-spacing: 0.03em;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
 margin-top: 0;
+border: transparent;
 }
 
 /* --------------------------- OUR WORKS------------------------- */
@@ -458,17 +465,20 @@ letter-spacing: 0.03em;
 color: var(--second-link-color);
 margin-left: 24px;
 }
-
 .item{
-margin-bottom: 30px;
-background: #FFFFFF;
+  width: calc((100%-60px)/3);
+  margin-right: 30px;
+  background: #FFFFFF;
 border: 1px solid #EEEEEE;
-margin-right: 30px;
+margin-bottom: 30px;
+}
+.item:nth-child(3n){
+  margin-right: 0px;
 }
 
 .item:nth-last-child(-n+3){
-  margin-bottom: 0;
-}
+    margin-bottom: 0;}
+
 
 .item:hover{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -486,7 +496,7 @@ margin-right: 30px;
 
 .item:nth-child(3n){
   margin-right: 0;
-}
+} 
 
 /*------FOOTER------ */
 
